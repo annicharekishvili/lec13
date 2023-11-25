@@ -1,0 +1,74 @@
+.container {
+    @include myContainer;
+    @include flexContainer;
+    background-color: $main-color;
+    border-radius: 10px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.sec1 {
+    margin-top: 50px;
+    .container {
+
+        .box1 {
+            background-color: $secondary-color1;
+
+            &:hover {
+                background-color: $secondary-color3;
+            }
+        }
+
+        .box2 {
+            background-color: $secondary-color2;
+        }
+
+        .box3 {
+            background-color: $secondary-color3;
+        }
+
+    }
+}
+
+
+.sec2 {
+    margin-top: 50px;
+    .container {
+        @include flexContainer(space-around);
+        .box1 {
+            background-color: $secondary-color3;
+        }
+
+        .box2 {
+            background-color: $secondary-color1;
+        }
+
+        .box3 {
+            background-color: $secondary-color2;
+        }
+    }
+}
+
+.sec3 {
+    margin-top: 50px;
+    .container {
+        @include flexContainer(center);
+        button {
+            &:first-child {
+                @include myButton
+            }
+
+            &:nth-child(2) {
+                @include myButton($buttonColor2)
+            }
+
+            &:last-child {
+                @include myButton($buttonColor3)
+            }
+        }
+    }
+}

@@ -1,0 +1,156 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightcoral;
+  border-radius: 10px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.sec1 {
+  margin-top: 50px;
+}
+.sec1 .container .box1 {
+  background-color: pink;
+}
+.sec1 .container .box1:hover {
+  background-color: palegreen;
+}
+.sec1 .container .box2 {
+  background-color: aqua;
+}
+.sec1 .container .box3 {
+  background-color: palegreen;
+}
+
+.sec2 {
+  margin-top: 50px;
+}
+.sec2 .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sec2 .container .box1 {
+  background-color: palegreen;
+}
+.sec2 .container .box2 {
+  background-color: pink;
+}
+.sec2 .container .box3 {
+  background-color: aqua;
+}
+
+.sec3 {
+  margin-top: 50px;
+}
+.sec3 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec3 .container button:first-child {
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  background-color: rgb(43, 43, 203);
+  border: none;
+}
+.sec3 .container button:first-child:hover {
+  opacity: 0.7;
+}
+.sec3 .container button:nth-child(2) {
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  background-color: rgb(158, 157, 157);
+  border: none;
+}
+.sec3 .container button:nth-child(2):hover {
+  opacity: 0.7;
+}
+.sec3 .container button:last-child {
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  background-color: rgb(152, 52, 52);
+  border: none;
+}
+.sec3 .container button:last-child:hover {
+  opacity: 0.7;
+}/*# sourceMappingURL=global.css.map */
